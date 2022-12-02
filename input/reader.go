@@ -7,22 +7,22 @@ import (
 )
 
 func Read(fileName string) chan string {
-    lines := make(chan string)
+	lines := make(chan string)
 
-    readFile, err := os.Open(fileName)
+	readFile, err := os.Open(fileName)
 
-    if err != nil {
-        log.Fatalf("Couldn't read file: %v", err.Error())
-    }
+	if err != nil {
+		log.Fatalf("Couldn't read file: %v", err.Error())
+	}
 
-    fileScanner := bufio.NewScanner(readFile)
+	fileScanner := bufio.NewScanner(readFile)
 
-    go func(){
-        for fileScanner.Scan() {
-            lines <- fileScanner.Text()
-        }
-        close(lines)
-    }()
+	go func() {
+		for fileScanner.Scan() {
+			lines <- fileScanner.Text()
+		}
+		close(lines)
+	}()
 
-    return lines
+	return lines
 }
