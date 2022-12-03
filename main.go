@@ -5,6 +5,7 @@ import (
 
 	"github.com/hpompecki/aoc_2022/day1"
 	"github.com/hpompecki/aoc_2022/day2"
+	"github.com/hpompecki/aoc_2022/day3"
 )
 
 func main() {
@@ -19,4 +20,10 @@ func main() {
 
 	day2Result2 := day2.TotalPoints2("day2/input.txt")
 	fmt.Printf("Day 2, puzzle 2 result: %v\n", day2Result2)
+
+	day3Result1 := day3.SumOfPriorities("day3/input.txt")
+	fmt.Printf("Day 3, puzzle 1 result: %v\n", day3Result1)
+
+	day3Result2 := day3.SumOfBadgePriorities("day3/input.txt")
+	fmt.Printf("Day 3, puzzle 2 result: %v\n", day3Result2)
 }
