@@ -6,6 +6,7 @@ import (
 	"github.com/hpompecki/aoc_2022/day1"
 	"github.com/hpompecki/aoc_2022/day2"
 	"github.com/hpompecki/aoc_2022/day3"
+	"github.com/hpompecki/aoc_2022/day4"
 )
 
 func main() {
@@ -26,4 +27,10 @@ func main() {
 
 	day3Result2 := day3.SumOfBadgePriorities("day3/input.txt")
 	fmt.Printf("Day 3, puzzle 2 result: %v\n", day3Result2)
+
+	day4Result1 := day4.CountFullyOverlappingRanges("day4/input.txt")
+	fmt.Printf("Day 4, puzzle 1 result: %v\n", day4Result1)
+
+	day4Result2 := day4.CountOverlappingRanges("day4/input.txt")
+	fmt.Printf("Day 4, puzzle 2 result: %v\n", day4Result2)
 }
