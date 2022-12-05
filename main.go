@@ -7,6 +7,7 @@ import (
 	"github.com/hpompecki/aoc_2022/day2"
 	"github.com/hpompecki/aoc_2022/day3"
 	"github.com/hpompecki/aoc_2022/day4"
+	"github.com/hpompecki/aoc_2022/day5"
 )
 
 func main() {
@@ -33,4 +34,10 @@ func main() {
 
 	day4Result2 := day4.CountOverlappingRanges("day4/input.txt")
 	fmt.Printf("Day 4, puzzle 2 result: %v\n", day4Result2)
+
+	day5Result1 := day5.TopCratesAfterMoves("day5/input.txt", true)
+	fmt.Printf("Day 5, puzzle 1 result: %v\n", day5Result1)
+
+	day5Result2 := day5.TopCratesAfterMoves("day5/input.txt", false)
+	fmt.Printf("Day 5, puzzle 2 result: %v\n", day5Result2)
 }
