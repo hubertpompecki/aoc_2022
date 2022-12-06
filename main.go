@@ -8,6 +8,7 @@ import (
 	"github.com/hpompecki/aoc_2022/day3"
 	"github.com/hpompecki/aoc_2022/day4"
 	"github.com/hpompecki/aoc_2022/day5"
+	"github.com/hpompecki/aoc_2022/day6"
 )
 
 func main() {
@@ -40,4 +41,10 @@ func main() {
 
 	day5Result2 := day5.TopCratesAfterMoves("day5/input.txt", false)
 	fmt.Printf("Day 5, puzzle 2 result: %v\n", day5Result2)
+
+	day6Result1 := day6.PacketMarkerLocation("day6/input.txt")
+	fmt.Printf("Day 6, puzzle 1 result: %v\n", day6Result1)
+
+	day6Result2 := day6.MessageMarkerLocation("day6/input.txt")
+	fmt.Printf("Day 6, puzzle 2 result: %v\n", day6Result2)
 }
