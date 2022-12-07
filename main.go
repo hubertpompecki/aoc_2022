@@ -9,6 +9,7 @@ import (
 	"github.com/hpompecki/aoc_2022/day4"
 	"github.com/hpompecki/aoc_2022/day5"
 	"github.com/hpompecki/aoc_2022/day6"
+	"github.com/hpompecki/aoc_2022/day7"
 )
 
 func main() {
@@ -47,4 +48,10 @@ func main() {
 
 	day6Result2 := day6.MessageMarkerLocation("day6/input.txt")
 	fmt.Printf("Day 6, puzzle 2 result: %v\n", day6Result2)
+
+	day7Result1 := day7.SmallDirsTotal("day7/input.txt")
+	fmt.Printf("Day 7, puzzle 1 result: %v\n", day7Result1)
+
+	day7Result2 := day7.DirToDelete("day7/input.txt")
+	fmt.Printf("Day 7, puzzle 2 result: %v\n", day7Result2)
 }
