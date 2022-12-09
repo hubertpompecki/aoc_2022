@@ -11,6 +11,7 @@ import (
 	"github.com/hpompecki/aoc_2022/day6"
 	"github.com/hpompecki/aoc_2022/day7"
 	"github.com/hpompecki/aoc_2022/day8"
+	"github.com/hpompecki/aoc_2022/day9"
 )
 
 func main() {
@@ -61,4 +62,10 @@ func main() {
 
 	day8Result2 := day8.HighestScenicScore("day8/input.txt")
 	fmt.Printf("Day 8, puzzle 2 result: %v\n", day8Result2)
+
+	day9Result1 := day9.VisitedCount("day9/input.txt")
+	fmt.Printf("Day 9, puzzle 1 result: %v\n", day9Result1)
+
+	day9Result2 := day9.VisitedCountLong("day9/input.txt")
+	fmt.Printf("Day 9, puzzle 2 result: %v\n", day9Result2)
 }
