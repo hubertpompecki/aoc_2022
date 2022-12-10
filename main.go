@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/hpompecki/aoc_2022/day1"
+	"github.com/hpompecki/aoc_2022/day10"
 	"github.com/hpompecki/aoc_2022/day2"
 	"github.com/hpompecki/aoc_2022/day3"
 	"github.com/hpompecki/aoc_2022/day4"
@@ -68,4 +69,13 @@ func main() {
 
 	day9Result2 := day9.VisitedCountLong("day9/input.txt")
 	fmt.Printf("Day 9, puzzle 2 result: %v\n", day9Result2)
+
+	day10Result1 := day10.SumOfStrengths("day10/input.txt")
+	fmt.Printf("Day 10, puzzle 1 result: %v\n", day10Result1)
+
+	day10Result2 := day10.Render("day10/input.txt")
+	fmt.Println("Day 10, puzzle 2 result:")
+	for _, l := range day10Result2 {
+		fmt.Println(string(l[:]))
+	}
 }
