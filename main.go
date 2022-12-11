@@ -5,6 +5,7 @@ import (
 
 	"github.com/hpompecki/aoc_2022/day1"
 	"github.com/hpompecki/aoc_2022/day10"
+	"github.com/hpompecki/aoc_2022/day11"
 	"github.com/hpompecki/aoc_2022/day2"
 	"github.com/hpompecki/aoc_2022/day3"
 	"github.com/hpompecki/aoc_2022/day4"
@@ -78,4 +79,10 @@ func main() {
 	for _, l := range day10Result2 {
 		fmt.Println(string(l[:]))
 	}
+
+	day11Result1 := day11.MonkeyBusiness("day11/input.txt")
+	fmt.Printf("Day 11, puzzle 1 result: %v\n", day11Result1)
+
+	day11Result2 := day11.MonkeyBusiness2("day11/input.txt")
+	fmt.Printf("Day 11, puzzle 2 result: %v\n", day11Result2)
 }
