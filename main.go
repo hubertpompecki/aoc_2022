@@ -6,6 +6,7 @@ import (
 	"github.com/hpompecki/aoc_2022/day1"
 	"github.com/hpompecki/aoc_2022/day10"
 	"github.com/hpompecki/aoc_2022/day11"
+	"github.com/hpompecki/aoc_2022/day12"
 	"github.com/hpompecki/aoc_2022/day2"
 	"github.com/hpompecki/aoc_2022/day3"
 	"github.com/hpompecki/aoc_2022/day4"
@@ -85,4 +86,10 @@ func main() {
 
 	day11Result2 := day11.MonkeyBusiness2("day11/input.txt")
 	fmt.Printf("Day 11, puzzle 2 result: %v\n", day11Result2)
+
+	day12Result1 := day12.ShortestPath("day12/input.txt")
+	fmt.Printf("Day 12, puzzle 1 result: %v\n", day12Result1)
+
+	day12Result2 := day12.ShortestPathFromBestStart("day12/input.txt")
+	fmt.Printf("Day 12, puzzle 2 result: %v\n", day12Result2)
 }
