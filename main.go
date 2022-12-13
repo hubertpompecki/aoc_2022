@@ -7,6 +7,7 @@ import (
 	"github.com/hpompecki/aoc_2022/day10"
 	"github.com/hpompecki/aoc_2022/day11"
 	"github.com/hpompecki/aoc_2022/day12"
+	"github.com/hpompecki/aoc_2022/day13"
 	"github.com/hpompecki/aoc_2022/day2"
 	"github.com/hpompecki/aoc_2022/day3"
 	"github.com/hpompecki/aoc_2022/day4"
@@ -92,4 +93,10 @@ func main() {
 
 	day12Result2 := day12.ShortestPathFromBestStart("day12/input.txt")
 	fmt.Printf("Day 12, puzzle 2 result: %v\n", day12Result2)
+
+	day13Result1 := day13.RightOrderIndices("day13/input.txt")
+	fmt.Printf("Day 13, puzzle 1 result: %v\n", day13Result1)
+
+	day13Result2 := day13.DecoderKey("day13/input.txt")
+	fmt.Printf("Day 13, puzzle 2 result: %v\n", day13Result2)
 }
